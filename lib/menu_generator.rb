@@ -3,7 +3,7 @@ require './lib/potluck'
 
 class MenuGenerator
   attr_reader :menu
-  
+
   def initialize(potluck)
     @potluck = potluck
     @menu = Hash.new([])

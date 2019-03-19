@@ -25,4 +25,14 @@ class Potluck
     end
   end
 
+  def ratio(category)
+    category_list = @dishes.map do |dish|
+      dish.category
+    end
+
+    number_in_category =  category_list.count(category)
+    percent = number_in_category.to_f / category_list.length * 100
+    percent.round(1)
+  end
+
 end
