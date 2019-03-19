@@ -119,9 +119,8 @@ class PotluckTest < Minitest::Test
     potluck.add_dish(candy_salad)
     potluck.add_dish(bean_dip)
 
-    expected = {:appetizers=>["Bean Dip", "Couscous Salad", "Summer Pizza"], :entres=>["Cocktail Meatballs", "Roast Port"], :desserts=>["Candy Salad"]}
+    expected = {:appetizers=>["Bean Dip", "Couscous Salad", "Summer Pizza"], :entres=>["Cocktail Meatballs", "Roast Pork"], :desserts=>["Candy Salad"]}
 
-    # why not passing? they look identical!
     assert_equal expected, potluck.menu
   end
 
